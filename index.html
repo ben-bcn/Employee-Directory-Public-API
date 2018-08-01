@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Employee Directory</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Awesome Startup Employee Directory</h1>
+		<form>
+			<input type="text" name="filterName" id="filter" placeholder="Filter by name..." value="">
+			<button id="filterList">filter</button>
+			<button id="reset">reset</button>
+	</form>
+		<ul id="employeeList">
+		</ul>
+	</div>
+	<div id="blackOut"></div>
+	<div id="modal">
+		<a href="#" id="close">X</a>
+		<img src="">
+		<h3>name</h3>
+		<p class="email"><a href="mailto:${data[i].email}">${data[i].email}</a></p>
+		<p class="city">${data[i].location.city}</p>
+		<hr>
+		<p class="phone">phone</p>
+		<p class="address">address</p>
+		<p class="birthday">Birthday: <span></span></p>
+		<ul id="nav">
+			<li data-id="">Previous</li>
+			<li data-id="">Next</li>
+		</ul>
+	</div>
+<script src="js/script.js"></script>
+</body>
+</html>
